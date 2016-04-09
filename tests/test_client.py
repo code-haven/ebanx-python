@@ -19,5 +19,5 @@ class EbanxClientTest(unittest.TestCase):
         client = EbanxClient('integration_key', 'secret_key', 'production')
         self.assertEqual(client.endpoint, PRODUCTION_ENDPOINT_URL)
 
-if __name__ == '__main__':
-    unittest.main()
+    def test_exception_case(self):
+        self.assertRaises(InvalidEnvironmentException, EbanxClient, 'integration_key', 'secret_key', 'rajnikanth')
