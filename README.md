@@ -1,3 +1,5 @@
+![Build status](https://travis-ci.org/code-haven/ebanx-python.svg?branch=master)
+
 # ebanx-python
 
 A Python client that wraps the RESTful APIs provided by EBANX.
