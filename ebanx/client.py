@@ -1,4 +1,5 @@
 from ebanx.settings import SANDBOX_ENDPOINT_URL, PRODUCTION_ENDPOINT_URL
+from ebanx.exceptions import InvalidEnvironmentException
 
 
 class EbanxClient:
@@ -16,9 +17,12 @@ class EbanxClient:
     def post(self, *args, **kwargs):
         pass
 
-    def _get_endpoint(environment):
+    def _get_endpoint(self, environment):
         if environment == 'sandbox':
             return SANDBOX_ENDPOINT_URL
 
         elif environment == 'production':
             return PRODUCTION_ENDPOINT_URL
+
+        else:
+            raise InvalidEnvironmentException(environment=environment)
