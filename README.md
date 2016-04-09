@@ -1,4 +1,5 @@
 ![Build status](https://travis-ci.org/code-haven/ebanx-python.svg?branch=master)
+![codecov.io](https://codecov.io/github/code-haven/ebanx-python/coverage.svg?branch=master)(https://codecov.io/github/code-haven/ebanx-python?branch=master)
 
 # ebanx-python
 

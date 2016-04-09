@@ -12,4 +12,5 @@ before_install:
   - pip install codecov
 after_success:
   - codecov
-script: nosetests
+script:
+  - nosetests --with-coverage
