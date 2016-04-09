@@ -1,1 +1,1 @@
-from client import EbanxClient
+from ebanx.client import EbanxClient
